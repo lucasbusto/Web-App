@@ -1,0 +1,38 @@
+/* Significa o que está aqui dentro [] é meu seletor de atributo */
+[data-color="first"] {
+  background-color: #EA2E49; /*Vermelho*/
+}
+[data-color="second"] {
+  background-color: #DAEDE2; /*Cinza*/
+}
+[data-color="third"] {
+  background-color: #17F887; /*Verde*/
+}
+[data-color="fourth"] {
+  background-color: #F6F792; /*Amarelo*/
+}
+.card {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 16px;
+  width: 25%;
+  position: relative;
+}
+.wrap-card-colors {
+  position: absolute;
+  top: -16px;
+  left: 0;
+}
+.card-colors {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 32px;
+  height: 32px;
+  text-indent: -9999px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+}
+.card-colors.isActive{
+  border-width: 4px;
+}

@@ -1,0 +1,31 @@
+/*Color Theme : CS04 */
+/*Site: https://color.adobe.com */
+.header {
+  background-color: #2284D3;
+  height: 40px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 45px;
+
+}
+.header-title {
+  color: #B3DAEE;
+  display: inline;
+  vertical-align: middle;
+
+}
+.header-menu {
+  float: right;
+}
+.header-botton:first-child {
+  margin-right: 15px;
+}
+.header-botton {
+  background-color: #333745;
+  color: #FFF;
+  font-size: 16px;
+  box-sizing: content-box;
+  height: 22px;
+  padding: 8px;
+  display: inline-block;
+}
