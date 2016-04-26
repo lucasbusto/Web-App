@@ -1,38 +1,62 @@
-/* Significa o que está aqui dentro [] é meu seletor de atributo */
-[data-color="first"] {
-  background-color: #EA2E49; /*Vermelho*/
-}
-[data-color="second"] {
-  background-color: #DAEDE2; /*Cinza*/
-}
-[data-color="third"] {
-  background-color: #17F887; /*Verde*/
-}
-[data-color="fourth"] {
-  background-color: #F6F792; /*Amarelo*/
-}
 .card {
   display: inline-block;
   box-sizing: border-box;
   padding: 16px;
   width: 25%;
   position: relative;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #888888;
+  
 }
-.wrap-card-colors {
+.wrap-card-options {
   position: absolute;
   top: -16px;
   left: 0;
+  opacity: 0;
+  transition: opacity 0.5s linear;
 }
-.card-colors {
+.card:hover .wrap-card-options{
+  opacity: 1;
+}
+.card-options {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #FFF;
   display: inline-block;
   box-sizing: border-box;
   width: 32px;
   height: 32px;
   text-indent: -9999px;
   overflow: hidden;
+  cursor: pointer;
   border-radius: 50%;
   border: 2px solid rgba(0, 0, 0, 0.5);
 }
-.card-colors.isActive{
+.card-options.isActive{
   border-width: 4px;
+}
+.card_delete {
+  background-image: url(../../images/delete.svg);
+  background-size: 75%;
+  margin-right: 15px;
+}
+.card_edit {
+  background-image: url(../../images/edit.svg);
+  background-size: 72%;
+}
+.card-content[contenteditable="true"]{
+  outline: 3px dotted rgba(0, 0, 0, 0.5);
+}
+/* Significa o que está aqui dentro [] é meu seletor de atributo */
+[data-color="first"] {
+  background-color: #EA2E49; /*Vermelho*/
+}
+[data-color="second"] {
+  background-color: #9999FF; /*Roxo*/
+}
+[data-color="third"] {
+  background-color: #17F887; /*Verde*/
+}
+[data-color="fourth"] {
+  background-color: #F6F792; /*Amarelo*/
 }

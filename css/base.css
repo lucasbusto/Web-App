@@ -1,3 +1,10 @@
 .container {
   padding: 0 10%;
 }
+.error {
+  display: block;
+  color: #FF0000;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}

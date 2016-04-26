@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/block/header.css">
+    <link rel="stylesheet" href="css/block/newCard.css">
     <link rel="stylesheet" href="css/block/card.css">
+
 </head>
 
 <body>
@@ -15,37 +17,49 @@
         <h1 class="header-title">Projeto - Front-end</h1>
         <nav class="header-menu">
             <ul>
-                <li class="header-botton">
+                <li class="header-button">
                     <a href="">Linhas</a>
                 </li>
 
-                <li class="header-botton">
+                <li class="header-button">
                     <a href="">?</a>
                 </li>
             </ul>
         </nav>
     </header>
 
+    <form action="" class="newCard">
+        <textarea class="newCard-content" placeholder="Digite aqui o conteúdo do seu cartão!" name="" id="" cols="30" rows="10"></textarea>
+        <input class="newCard-action"type="submit" value="Salvar">
+    </form>
+
+
     <section class="container">
         <ol>
             <li class="card" data-color="first">
-                <nav class="wrap-card-colors">
+                <nav class="wrap-card-options">
                     <ul>
-                        <li class="card-colors isActive" data-color="first">
+                        <li class="card-options card_delete">
+                            <a href="">Excluir</a>
+                        </li>
+                        <li class="card-options card_edit">
+                            <a href="">Editar</a>
+                        </li>
+                        <li class="card-options isActive" data-color="first">
                             <a href="">Vermelho</a>
                         </li>
-                        <li class="card-colors" data-color="second">
-                            <a href="">Cinza</a>
+                        <li class="card-options" data-color="second">
+                            <a href="">Roxo</a>
                         </li>
-                        <li class="card-colors" data-color="third">
+                        <li class="card-options" data-color="third">
                             <a href="">Verde</a>
                         </li>
-                        <li class="card-colors" data-color="fourth">
+                        <li class="card-options" data-color="fourth">
                             <a href="">Amarelo</a>
                         </li>
                     </ul>
                 </nav>
-                <p>
+                <p class="card-content" contenteditable="false">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo dolores fugit alias, a debitis placeat distinctio pariatur maiores, reiciendis iste delectus ullam tempore laboriosam quam voluptas veritatis explicabo temporibus quisquam ipsam qui et! Reprehenderit
                     blanditiis, minus, atque possimus porro dignissimos.
                 </p>
@@ -54,23 +68,29 @@
 
           -->
             <li class="card" data-color="second">
-                <nav class="wrap-card-colors">
+                <nav class="wrap-card-options">
                     <ul>
-                        <li class="card-colors" data-color="first">
+                        <li class="card-options card_delete">
+                            <a href="">Excluir</a>
+                        </li>
+                        <li class="card-options card_edit">
+                            <a href="">Editar</a>
+                        </li>
+                        <li class="card-options" data-color="first">
                             <a href="">Vermelho</a>
                         </li>
-                        <li class="card-colors isActive" data-color="second">
-                            <a href="">Cinza</a>
+                        <li class="card-options isActive" data-color="second">
+                            <a href="">Roxo</a>
                         </li>
-                        <li class="card-colors" data-color="third">
+                        <li class="card-options" data-color="third">
                             <a href="">Verde</a>
                         </li>
-                        <li class="card-colors" data-color="fourth">
+                        <li class="card-options" data-color="fourth">
                             <a href="">Amarelo</a>
                         </li>
                     </ul>
                 </nav>
-                <p>
+                <p class="card-content" contenteditable="false">
                     Sapiente, excepturi animi dicta a incidunt labore deleniti atque reprehenderit quidem optio mollitia expedita suscipit, necessitatibus. Fugit, unde id repudiandae beatae in excepturi aliquam dignissimos aperiam voluptate. Voluptatibus doloremque ex fugiat
                     natus commodi perferendis eius ad, quasi facilis culpa eligendi.
                 </p>
@@ -80,23 +100,29 @@
 
           -->
             <li class="card" data-color="third">
-                <nav class="wrap-card-colors">
+                <nav class="wrap-card-options">
                     <ul>
-                        <li class="card-colors" data-color="first">
+                        <li class="card-options card_delete">
+                            <a href="">Excluir</a>
+                        </li>
+                        <li class="card-options card_edit">
+                            <a href="">Editar</a>
+                        </li>
+                        <li class="card-options" data-color="first">
                             <a href="">Vermelho</a>
                         </li>
-                        <li class="card-colors" data-color="second">
-                            <a href="">Cinza</a>
+                        <li class="card-options" data-color="second">
+                            <a href="">Roxo</a>
                         </li>
-                        <li class="card-colors isActive" data-color="third">
+                        <li class="card-options isActive" data-color="third">
                             <a href="">Verde</a>
                         </li>
-                        <li class="card-colors" data-color="fourth">
+                        <li class="card-options" data-color="fourth">
                             <a href="">Amarelo</a>
                         </li>
                     </ul>
                 </nav>
-                <p>
+                <p class="card-content" contenteditable="false">
                     Facere atque illo vero dicta, similique, laudantium, optio maxime ad eius asperiores nemo esse et labore quibusdam cumque possimus! Similique, eligendi repudiandae voluptate. Rem fugit modi aut eaque, quasi totam, similique soluta sunt sed consequuntur
                     voluptatibus accusamus dolore in magni.
                 </p>
@@ -105,31 +131,37 @@
 
           -->
             <li class="card" data-color="fourth">
-                <nav class="wrap-card-colors">
+                <nav class="wrap-card-options">
                     <ul>
-                        <li class="card-colors" data-color="first">
+                        <li class="card-options card_delete">
+                            <a href="">Excluir</a>
+                        </li>
+                        <li class="card-options card_edit">
+                            <a href="">Editar</a>
+                        </li>
+                        <li class="card-options" data-color="first">
                             <a href="">Vermelho</a>
                         </li>
-                        <li class="card-colors" data-color="second">
-                            <a href="">Cinza</a>
+                        <li class="card-options" data-color="second">
+                            <a href="">Roxo</a>
                         </li>
-                        <li class="card-colors" data-color="third">
+                        <li class="card-options" data-color="third">
                             <a href="">Verde</a>
                         </li>
-                        <li class="card-colors isActive" data-color="fourth">
+                        <li class="card-options isActive" data-color="fourth">
                             <a href="">Amarelo</a>
                         </li>
                     </ul>
                 </nav>
-                <p>
+                <p class="card-content" contenteditable="false">
                     Minus natus voluptatibus rem ducimus voluptatum soluta illum laboriosam ut fuga eaque numquam recusandae vel doloremque et veniam repudiandae illo impedit error quod similique, cupiditate inventore! Error illum soluta, ipsum aliquid blanditiis vero commodi
                     quas dolores praesentium odio ab consequatur.
                 </p>
             </li>
         </ol>
     </section>
-    <script src="js/block/newCard.js"></script>
     <script src="js/block/card.js"></script>
+    <script src="js/block/newCard.js"></script>
 </body>
 
 </html>

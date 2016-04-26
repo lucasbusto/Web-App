@@ -5,7 +5,8 @@
   height: 40px;
   padding-top: 8px;
   padding-bottom: 8px;
-  margin-bottom: 45px;
+
+
 
 }
 .header-title {
@@ -17,10 +18,10 @@
 .header-menu {
   float: right;
 }
-.header-botton:first-child {
+.header-button:first-child {
   margin-right: 15px;
 }
-.header-botton {
+.header-button {
   background-color: #333745;
   color: #FFF;
   font-size: 16px;
@@ -28,4 +29,5 @@
   height: 22px;
   padding: 8px;
   display: inline-block;
+  border-radius: 5px;
 }
