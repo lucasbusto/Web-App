@@ -32,6 +32,6 @@ $newCard.addEventListener('submit', function(event) {
 
         $wrapCard.insertBefore($copyCard, $card);
     };
-    //PAREI NA AULA 5.7
+    
 
 });
